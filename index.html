@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Meanings</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1>Random Meanings</h1>
+    </div>
+    <div class="game-box">
+      <div class="game-box-header">
+        <button class="btn showMeaningBox active-showMeaningBox" onclick="addMeaningsBox()">
+          Add Meanings
+        </button>
+        <button class="btn showMeaningBox" onclick="addMeaningsBox()">
+          Show Meanings
+        </button>
+        <button class="btn showMeaningBox" onclick="addMeaningsBox()">Category</button>
+      </div>
+      <div class="main-box radius-50">
+        <span id="randomWord" class="">Play</span>
+        <div class="boil">
+          <span class="balloon"></span>
+        </div>
+      </div>
+
+      <div class="bottom-button">
+        <button class="play btn bottom" id="play">Play</button>
+        <button class="play pause btn bottom disable" id="pause" disabled="true">Pause</button>
+        <div class="category">
+          <select name="select" id="selectCategory" class="selectOption">
+            <option value="All">All</option>
+            <option value="Books">Books</option>
+            <option value="Novels">Novels</option>
+          </select>
+        </div>
+      </div>
+      <div class="addMeaningBox" id="addMeaningBox">
+        <menu class="menuBar">
+          <div class="flex">
+            <span class="showOurMeanings menuBar-active" onclick="showOurMeaning()">Add</span>
+            <span class="showOurMeanings" onclick="showOurMeaning()">Show</span>
+            <span class="showOurMeanings" onclick="showOurMeaning()">Category</span>
+          </div>
+          <ul id="closeButton">
+            <li></li>
+            <li></li>
+          </ul>
+        </menu>
+        <div class="changeMenu">
+          <div class="changetab tabs meaningadd">
+            <h3>Add Meanings</h3>
+            <div class="category">
+              <select name="select" id="select" class="selectOption">
+                <option value="All">All</option>
+                <option value="Books">Books</option>
+                <option value="Novels">Novels</option>
+              </select>
+            </div>
+            <div class="inputBox">
+              <div class="box">
+                <input type="text" class="input" autofocus />
+                <input type="text" class="input" />
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="btn add disable" id="addMeanings">Add</button>
+              <button class="btn-sm add" id="hideMeaningBox">Cancel</button>
+            </div>
+          </div>
+          <div class="tabs meaningDelete">
+            <h3>Meanings</h3>
+            <div class="category">
+              <select name="select" id="selectMeanings" class="selectOption" aria-placeholder="hello">
+                <option value="All">All</option>
+                <option value="Books">Books</option>
+                <option value="Novels">Novels</option>
+              </select>
+            </div>
+            <ul id="showMyMeanings">
+            </ul>
+          </div>
+          <div class="tabs meaningDelete ">
+            <h3>Add Category</h3>
+            <div class="categoryTab">
+              <div class="sub-categoryTab">
+                <div class="categoryName">
+                  <input type="text" id="categoryName" name="category name" placeholder="Enter your category name">
+                </div>
+                <div class="categoryDesc">
+                  <textarea id="description" cols=" 20" rows="5"
+                    placeholder="Enter your category description"></textarea>
+                </div>
+                <button class="btn" id="addCategory">Add Category</button>
+                <button class="btn" id="showCategory">Show Category</button>
+              </div>
+              <!-- <div class="sideBar-categoryTab"></div> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="showCategory d-none">
+        <menu class="menuBar">
+          <div class="flex">
+            <div class="sectionName">Your Categories</div>
+          </div>
+          <ul id="categoryCloseButton" class="closeButton">
+            <li></li>
+            <li></li>
+          </ul>
+        </menu>
+        <center>
+          <h3>Your Categories</h3>
+        </center>
+        <ul class="categoryContainer">
+        </ul>
+      </div>
+      <div class="showCategoryDetails d-none">
+        <menu class="menuBar">
+          <div class="flex">
+            <div class="sectionName">Your Categories</div>
+          </div>
+          <ul id="closeShowCategory">
+            <li></li>
+            <li></li>
+          </ul>
+        </menu>
+        <center>
+          <h2>Your Categories</h2>
+        </center>
+        <div class="categoryDetails">
+          <h3>Category Name</h3>
+          <p>Category description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quisquam quidem deserunt
+            nostrum cupiditate dolore, odio asperiores incidunt exercitationem tenetur aperiam voluptate tempore quia
+            optio recusandae illum sint, architecto atque!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
