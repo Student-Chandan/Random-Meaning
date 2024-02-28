@@ -490,6 +490,12 @@
     overflow: auto;
     display: flex;
   }
+  .categoryTitle{
+    cursor: pointer;
+  }
+  svg{
+    cursor: pointer;
+  }
   .categoryTab .sub-categoryTab {
     width: 100%;
     font-size: 14px;

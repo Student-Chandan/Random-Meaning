@@ -115,6 +115,24 @@ document
   .getElementById("selectMeanings")
   .addEventListener("change", displayMeanings);
 
+  // Function to delete a meaning
+function deleteAddedMeaning(index) {
+  let select = document.getElementById("selectMeanings");
+  let selectedOption = select.options[select.selectedIndex].text;
+  let storedMeanings = JSON.parse(localStorage.getItem(selectedOption)) || [];
+
+  // Remove the meaning at the specified index
+  storedMeanings.splice(index, 1);
+
+  // Update the local storage with the modified meanings
+  localStorage.setItem(selectedOption, JSON.stringify(storedMeanings));
+
+  // Re-display the meanings
+  displayMeanings();
+}
+
+
+
 // Initial call to display meanings based on the initial selection
 
 let hideMeaningBox = document.getElementById("hideMeaningBox");
