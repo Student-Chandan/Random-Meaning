@@ -1,6 +1,21 @@
 console.log("Hello");
 displayMeanings();
 showCategories();
+defaultCategory();
+
+function defaultCategory() {
+  const defaultArray = [
+    "Tiger",
+    "Lion",
+    "Elephant",
+    "Panther",
+    "Jackel",
+    "Jiraffe",
+    "Camel",
+  ];
+
+  localStorage.setItem("All", JSON.stringify(defaultArray));
+}
 
 // Global variables start here
 let play = document.getElementById("play");
@@ -101,7 +116,7 @@ function displayMeanings() {
     storedMeanings.forEach(function (meaning, index) {
       showMyMeanings.innerHTML += `<li>
             <span>${meaning}</span>
-            <img src="/trash3.svg" id=${index} alt="delete" onclick="deleteAddedMeaning(this.id)">
+            <img src="/trash3.svg" id=${index} alt="delete" style="cursor: pointer;" onclick="deleteAddedMeaning(this.id)">
           </li>`;
     });
   } else {
@@ -115,7 +130,7 @@ document
   .getElementById("selectMeanings")
   .addEventListener("change", displayMeanings);
 
-  // Function to delete a meaning
+// Function to delete a meaning
 function deleteAddedMeaning(index) {
   let select = document.getElementById("selectMeanings");
   let selectedOption = select.options[select.selectedIndex].text;
@@ -130,8 +145,6 @@ function deleteAddedMeaning(index) {
   // Re-display the meanings
   displayMeanings();
 }
-
-
 
 // Initial call to display meanings based on the initial selection
 

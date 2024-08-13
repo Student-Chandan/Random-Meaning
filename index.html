@@ -5,19 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Random Meanings</title>
-  
-  <meta name="description" content="Random Meanings is an engaging web app where users can add meanings, categorize them by types like animals or birds, and play a game to guess the Hindi meaning. Test your knowledge and enjoy learning with various categories of meanings.">
-<meta name="keywords" content="Random Meanings, vocabulary game, Hindi meanings, educational game, language learning, animal names, bird names, word meanings, interactive learning">
-<meta name="author" content="Chandan Dev">
-<meta property="og:title" content="Random Meanings - Fun Vocabulary Game">
-<meta property="og:description" content="Play a fun and educational game with Random Meanings. Guess the Hindi meanings of various words, categorized by animals, birds, and more. Add, delete, and manage meanings in your favorite categories.">
-<meta property="og:image" content="URL to an image representing your app (e.g., a screenshot)">
-<meta property="og:url" content="URL of your deployed site">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Random Meanings - Fun Vocabulary Game">
-<meta name="twitter:description" content="Test your knowledge with Random Meanings. Play a game to guess Hindi meanings, manage categories like animals and birds, and enjoy interactive learning.">
-<meta name="twitter:image" content="URL to an image representing your app (e.g., a screenshot)">
-  
+
+  <meta name="description"
+    content="Random Meanings is an engaging web app where users can add meanings, categorize them by types like animals or birds, and play a game to guess the Hindi meaning. Test your knowledge and enjoy learning with various categories of meanings.">
+  <meta name="keywords"
+    content="Random Meanings, vocabulary game, Hindi meanings, educational game, language learning, animal names, bird names, word meanings, interactive learning">
+  <meta name="author" content="Chandan Dev">
+  <meta property="og:title" content="Random Meanings - Fun Vocabulary Game">
+  <meta property="og:description"
+    content="Play a fun and educational game with Random Meanings. Guess the Hindi meanings of various words, categorized by animals, birds, and more. Add, delete, and manage meanings in your favorite categories.">
+  <meta property="og:image" content="./random meaning screenshot .png">
+  <meta property="og:url" content="URL of your deployed site">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Random Meanings - Fun Vocabulary Game">
+  <meta name="twitter:description"
+    content="Test your knowledge with Random Meanings. Play a game to guess Hindi meanings, manage categories like animals and birds, and enjoy interactive learning.">
+  <meta name="twitter:image" content="./random meaning screenshot .png">
+
+  <link rel="icon" href="./favicon.png" type="image/png">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="media.css" />
 </head>
@@ -99,10 +104,11 @@
             <div class="categoryTab">
               <div class="sub-categoryTab">
                 <div class="categoryName">
-                  <input type="text" id="categoryName" name="category name" placeholder="Enter your category name">
+                  <input type="text" id="categoryName" name="category name" required
+                    placeholder="Enter your category name">
                 </div>
                 <div class="categoryDesc">
-                  <textarea id="description" cols=" 20" rows="5"
+                  <textarea id="description" cols=" 20" rows="5" required
                     placeholder="Enter your category description"></textarea>
                 </div>
                 <button class="btn" id="addCategory">Add Category</button>
