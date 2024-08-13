@@ -32,7 +32,7 @@
     <div class="heading">
       <h1>Random Meanings</h1>
     </div>
-    <div class="game-box">
+    <div class="game-box ">
       <div class="game-box-header">
         <button class="btn showMeaningBox active-showMeaningBox" onclick="addMeaningsBox()">
           Add Meanings
@@ -50,9 +50,11 @@
       </div>
 
       <div class="bottom-button">
-        <button class="play btn bottom" id="play">Play</button>
-        <button class="play pause btn bottom disable" id="pause" disabled="true">Pause</button>
-        <div class="category">
+        <div class="buttonBox">
+          <button class="play btn bottom" id="play">Play</button>
+          <button class="play pause btn bottom disable" id="pause" disabled="true">Pause</button>
+        </div>
+        <div class="category selectCategory">
           <select name="select" id="selectCategory" class="selectOption">
             <option value="All">All</option>
           </select>

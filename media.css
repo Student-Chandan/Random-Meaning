@@ -3,6 +3,7 @@
       width: 100vw;
       border: none;
     }
+
   }
   @media (max-width: 550px) {
     .game-box {
@@ -14,9 +15,23 @@
     .main-box {
       left: 90px;
     }
-    .bottom {
-      left: 177px;
+    .bottom-button .category{
+      position: relative;
+      margin: auto;
+      margin-top: 15px;
+      width: 200px;
     }
+    .bottom-button{
+      flex-direction: column;
+    } 
+    .bottom-button .buttonBox{
+      margin-bottom: 10px;
+    }
+    .main-box{
+      top: 20px;
+    }
+
+    
   }
   @media (max-width: 500px) {
     .game-box {
@@ -32,9 +47,7 @@
     .main-box {
       left: 77px;
     }
-    .bottom {
-      left: 170px;
-    }
+
     .game-box::before {
       width: 150px;
       height: 150px;
@@ -74,9 +87,7 @@
     .main-box {
       left: 52px;
     }
-    .bottom {
-      left: 135px;
-    }
+
   }
   @media (max-width: 420px) {
     .game-box {
@@ -93,9 +104,6 @@
     }
     .meaningDelete li {
       width: 93%;
-    }
-    .bottom {
-      left: 129px;
     }
     .main-box {
       left: 34px;
@@ -126,6 +134,7 @@
   @media (max-width: 385px) {
     .game-box {
       width: 340px;
+      height: 500px;
     }
     .addMeaningBox {
       width: 320px;
@@ -140,9 +149,7 @@
     .main-box {
       left: 22px;
     }
-    .bottom {
-      left: 110px;
-    }
+
     .sub-categoryTab button {
       margin-left: 7px;
     }
@@ -168,9 +175,7 @@
     .box input {
       width: 112px;
     }
-    .bottom {
-      left: 88px;
-    }
+
     .play-animation3 {
       font-size: 45px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -198,7 +203,7 @@
   @media (max-width: 315px) {
     .game-box {
       width: 280px;
-      height: 430px;
+      height: 480px;
     }
     .main-box {
       width: 227px;
@@ -212,9 +217,7 @@
     .box input {
       width: 104px;
     }
-    .bottom {
-      left: 82px;
-    }
+
     .inputBox {
       height: 239px;
     }
